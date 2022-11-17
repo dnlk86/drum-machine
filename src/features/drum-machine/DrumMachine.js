@@ -8,5 +8,10 @@ export function DrumMachine() {
     // const count = useSelector(selectCount);
     const dispatch = useDispatch();
 
-    return <div className={styles.drumMachineContainer}></div>;
+    return (
+        <div id="drum-machine" className={styles.drumMachineContainer}>
+            <h1>Ultimate Drum Machine</h1>
+            <div className={styles.switch}></div>
+        </div>
+    );
 }

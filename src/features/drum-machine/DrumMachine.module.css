@@ -1,3 +1,49 @@
 .drumMachineContainer {
+    width: 800px;
+    height: 400px;
     background-color: blueviolet;
+    border: 5px solid goldenrod;
+    border-radius: 15px;
+    box-shadow: 15px 15px 5px #404040;
+}
+
+h1 {
+    user-select: none;
+    font-family: "Press Start 2P", cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 4px 4px goldenrod;
+    padding-top: 25px;
+}
+
+.switch {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 40px solid goldenrod;
+}
+
+.switch::after {
+    position: absolute;
+    content: "ON";
+    color: white;
+    margin-top: 20px;
+    transform: rotateX(45deg);
+    font-size: 0.9rem;
+}
+
+.switch::before {
+    position: absolute;
+    content: "OFF";
+    color: white;
+    margin-top: 55px;
+    transform: rotateX(45deg);
+    font-size: 1rem;
 }
