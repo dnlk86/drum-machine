@@ -1,26 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    value: 0,
-    status: "idle",
+    active: true,
+    selectedDrumPad: "",
 };
 
 export const drumMachineSlice = createSlice({
     name: "drumMachine",
     initialState,
     reducers: {
-        increment: (state) => {
-            state.value += 1;
-        },
-        decrement: (state) => {
-            state.value -= 1;
+        select: (state, action) => {
+            if (state.active) {
+                state.selectedDrumPad = action.payload;
+                // setTimeout(() => (state.selectedDrumPad = ""), 500);     // timeout function doesn't work here, I moved it in the handleClick
+            }
         },
     },
 });
 
-export const { increment, decrement } = drumMachineSlice.actions;
+export const { select } = drumMachineSlice.actions;
 
-// TODO
-// export const selectCount = (state) => state.counter.value;
+export const showSelected = (state) => state.drumMachine.selectedDrumPad;
 
 export default drumMachineSlice.reducer;
