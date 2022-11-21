@@ -23,18 +23,18 @@ export default function Button(props) {
 
     return (
         <div>
-            <audio
-                id={props.btn.text}
-                className="clip"
-                src={props.btn.clip}
-                preload="auto"
-            ></audio>
             <button
                 id={props.btn.id}
                 className="drum-pad"
                 value={props.btn.value}
                 onClick={handleClick}
             >
+                <audio
+                    id={props.btn.text}
+                    className="clip"
+                    src={props.btn.clip}
+                    preload="auto"
+                ></audio>
                 {props.btn.text}
             </button>
         </div>
