@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Button.module.css";
+// import styles from "./Button.module.css";
 import { useDispatch } from "react-redux";
 import { select } from "./drumMachineSlice";
 
@@ -7,6 +7,7 @@ export default function Button(props) {
     const dispatch = useDispatch();
 
     const handleClick = (e) => {
+        document.getElementById(e.target.text).play();
         let btn = document.getElementById(e.target.id);
         dispatch(select(e.target.value));
         btn.style.border = props.btn.c_border;
@@ -22,9 +23,15 @@ export default function Button(props) {
 
     return (
         <div>
+            <audio
+                id={props.btn.text}
+                className="clip"
+                src={props.btn.clip}
+                preload="auto"
+            ></audio>
             <button
                 id={props.btn.id}
-                className={styles.myButton}
+                className="drum-pad"
                 value={props.btn.value}
                 onClick={handleClick}
             >
