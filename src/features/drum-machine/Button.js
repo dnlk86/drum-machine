@@ -7,8 +7,8 @@ export default function Button(props) {
     const dispatch = useDispatch();
 
     const handleClick = (e) => {
-        document.getElementById(e.target.text).play();
         let btn = document.getElementById(e.target.id);
+        document.getElementById(btn.innerText).play();
         dispatch(select(e.target.value));
         btn.style.border = props.btn.c_border;
         btn.style.backgroundColor = props.btn.c_bgColor;
