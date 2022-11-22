@@ -16,6 +16,14 @@ function App() {
     return (
         <div className="App">
             <DrumMachine />
+            <div id="signatureContainer">
+                <a
+                    href="https://github.com/dnlk86/drum-machine"
+                    target={"_blank"}
+                >
+                    dnlk86
+                </a>
+            </div>
         </div>
     );
 }

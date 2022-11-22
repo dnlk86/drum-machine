@@ -11,3 +11,7 @@ In order fulfill the project's requirements I decided to use the following techn
 -   create react app using the template react-redux
 -   a mix of html css and vanilla js for styling and additional functionalities
 -   github pages for deployment
+
+### Drum Machine live
+
+Please follow this link for the live project: [Drum Machine](https://dnlk86.github.io/drum-machine)
