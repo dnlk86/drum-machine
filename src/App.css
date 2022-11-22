@@ -3,12 +3,16 @@
 }
 
 .drum-pad {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     background-color: grey;
     border: 3px solid #fff;
     border-radius: 5px;
     font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
+    user-select: none;
+    font-family: "Press Start 2P", cursive;
+    font-size: 1.3rem;
+    text-align: center;
 }

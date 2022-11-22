@@ -1,4 +1,8 @@
 .drumMachineContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 800px;
     height: 400px;
     background-color: blueviolet;
@@ -52,4 +56,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    width: 250px;
+    height: 250px;
 }

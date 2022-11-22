@@ -123,7 +123,7 @@ export function DrumMachine() {
     return (
         <div id="drum-machine" className={styles.drumMachineContainer}>
             <h1>Ultimate Drum Machine</h1>
-            <div className={styles.switch}></div>
+            {/* <div className={styles.switch}></div> */}
             <Display selected={selected} />
             <div className={styles.padsGrid}>
                 {drumPadButtons.map((v) => (

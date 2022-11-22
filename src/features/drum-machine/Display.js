@@ -10,7 +10,7 @@ class Display extends React.Component {
     render() {
         return (
             <div id="display" className={styles.display}>
-                <p>{this.props.selected}</p>
+                <p className={styles.displayText}>{this.props.selected}</p>
             </div>
         );
     }
