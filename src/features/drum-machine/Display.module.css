@@ -1,6 +1,6 @@
 .display {
     height: 50px;
-    width: 245px;
+    width: 300px;
     background-color: rgb(127, 215, 255);
     border: 3px solid white;
     border-radius: 5px;
@@ -12,6 +12,6 @@
 .displayText {
     user-select: none;
     font-family: "Press Start 2P", cursive;
-    font-size: 1.75rem;
+    font-size: 1.35rem;
     color: green;
 }

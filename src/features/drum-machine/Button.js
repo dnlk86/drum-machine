@@ -9,7 +9,8 @@ export default function Button(props) {
     const handleClick = (e) => {
         let btn = document.getElementById(e.target.id);
         document.getElementById(btn.innerText).play();
-        dispatch(select(e.target.value));
+        // dispatch(select(e.target.value));
+        dispatch(select(props.btn.display));
         btn.style.border = props.btn.c_border;
         btn.style.backgroundColor = props.btn.c_bgColor;
         btn.style.color = props.btn.c_color;
@@ -18,7 +19,7 @@ export default function Button(props) {
             btn.style.border = props.btn.border;
             btn.style.backgroundColor = props.btn.bgColor;
             btn.style.color = props.btn.color;
-        }, 500);
+        }, 250);
     };
 
     return (
