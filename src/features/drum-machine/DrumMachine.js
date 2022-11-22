@@ -4,6 +4,7 @@ import { showSelected } from "./drumMachineSlice";
 import styles from "./DrumMachine.module.css";
 import Display from "./Display";
 import Button from "./Button";
+import Speaker from "./Speaker";
 
 export function DrumMachine() {
     const selected = useSelector(showSelected);
@@ -131,13 +132,17 @@ export function DrumMachine() {
     return (
         <div id="drum-machine" className={styles.drumMachineContainer}>
             <h1>Ultimate Drum Machine</h1>
-            <Display selected={selected} />
-            <div>
-                <div className={styles.padsGrid}>
-                    {drumPadButtons.map((v) => (
-                        <Button btn={v} />
-                    ))}
+            <div className="dmBody">
+                <Speaker />
+                <div className="dmControls">
+                    <Display selected={selected} />
+                    <div className={styles.padsGrid}>
+                        {drumPadButtons.map((v) => (
+                            <Button btn={v} />
+                        ))}
+                    </div>
                 </div>
+                <Speaker />
             </div>
         </div>
     );
