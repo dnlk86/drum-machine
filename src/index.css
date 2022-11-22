@@ -13,5 +13,4 @@ body {
     justify-content: center;
     align-items: center;
     background-image: radial-gradient(silver, #181818);
-    transition: 0.5s;
 }

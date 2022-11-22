@@ -21,7 +21,7 @@ export default function Button(props) {
             btn.style.border = props.btn.border;
             btn.style.backgroundColor = props.btn.bgColor;
             btn.style.color = props.btn.color;
-        }, 250);
+        }, 200);
     };
 
     return (

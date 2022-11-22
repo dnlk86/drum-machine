@@ -21,37 +21,6 @@ h1 {
     padding-top: 25px;
 }
 
-.switch {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    width: 40px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 40px solid goldenrod;
-}
-
-.switch::after {
-    position: absolute;
-    content: "ON";
-    color: white;
-    margin-top: 20px;
-    transform: rotateX(45deg);
-    font-size: 0.9rem;
-}
-
-.switch::before {
-    position: absolute;
-    content: "OFF";
-    color: white;
-    margin-top: 55px;
-    transform: rotateX(45deg);
-    font-size: 1rem;
-}
-
 .padsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

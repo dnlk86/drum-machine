@@ -7,7 +7,6 @@ import Button from "./Button";
 
 export function DrumMachine() {
     const selected = useSelector(showSelected);
-    // const dispatch = useDispatch();
 
     const drumPadButtons = [
         {
@@ -132,12 +131,13 @@ export function DrumMachine() {
     return (
         <div id="drum-machine" className={styles.drumMachineContainer}>
             <h1>Ultimate Drum Machine</h1>
-            {/* <div className={styles.switch}></div> */}
             <Display selected={selected} />
-            <div className={styles.padsGrid}>
-                {drumPadButtons.map((v) => (
-                    <Button btn={v} />
-                ))}
+            <div>
+                <div className={styles.padsGrid}>
+                    {drumPadButtons.map((v) => (
+                        <Button btn={v} />
+                    ))}
+                </div>
             </div>
         </div>
     );
