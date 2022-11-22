@@ -9,13 +9,15 @@ export default function Button(props) {
     const handleClick = (e) => {
         let btn = document.getElementById(e.target.id);
         document.getElementById(btn.innerText).play();
-        // dispatch(select(e.target.value));
+        document.body.style.backgroundImage = `radial-gradient(${props.btn.c_bgColor}, #181818)`;
         dispatch(select(props.btn.display));
         btn.style.border = props.btn.c_border;
         btn.style.backgroundColor = props.btn.c_bgColor;
         btn.style.color = props.btn.c_color;
         setTimeout(() => {
             dispatch(select(""));
+            document.body.style.backgroundImage =
+                "radial-gradient(silver, #181818)";
             btn.style.border = props.btn.border;
             btn.style.backgroundColor = props.btn.bgColor;
             btn.style.color = props.btn.color;
